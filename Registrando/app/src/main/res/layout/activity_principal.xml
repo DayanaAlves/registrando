@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".Principal">
+
+    <ImageView
+        android:id="@+id/sair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sair"
+        android:src="@drawable/ic_sair"
+        android:layout_gravity="right" />
+
+    <ImageView
+        android:id="@id/icoTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/titulo"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.0"
+        android:background="@color/colorButton2"
+        android:onClick="criarRegistro"
+        android:padding="25dp"
+        android:text="Registro de Enfermagem"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/text4" />
+
+    <Button
+        android:id="@+id/btn_valida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.0"
+        android:background="@color/colorButton"
+        android:onClick="validarRegistro"
+        android:padding="25dp"
+        android:text="Validação do Registro - Q-Dio"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/text4" />
+
+    <Button
+        android:id="@+id/btn_estudos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorButton2"
+        android:onClick="verEstudoDeCaso"
+        android:padding="25dp"
+        android:text="Estudos de Caso"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/text4" />
+
+    <Button
+        android:id="@+id/btn_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#24a193"
+        android:onClick="verInformacaoTecnica"
+        android:padding="25dp"
+        android:text="Informações Técnicas"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/text4"
+        android:layout_marginBottom="5dp"/>
+</LinearLayout>
