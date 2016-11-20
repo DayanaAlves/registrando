@@ -34,6 +34,10 @@
         <activity
             android:name="com.example.dayana.registrando.RegistroDeEnfermagem"
             android:screenOrientation="portrait" />
+	
+	<activity
+            android:name="com.example.dayana.registrando.LoginUsuario"
+            android:screenOrientation="portrait" />
 
 
     </application>
