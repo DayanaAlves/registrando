@@ -5,15 +5,16 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:padding="@dimen/padding"
-    tools:context=".Inicial">
+    tools:context=".TelaInicial">
 
     <ImageView
         android:id="@+id/icoPrincipal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/icoTitulo"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/ic_principal" />
 
     <ImageView

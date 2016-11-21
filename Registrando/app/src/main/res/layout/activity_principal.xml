@@ -4,15 +4,17 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context=".Principal">
+    tools:context=".TelaPrincipal">
 
-    <ImageView
-        android:id="@+id/sair"
+    <ImageButton
+        android:padding="@dimen/padding"
+        android:id="@+id/desconectar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="sair"
-        android:src="@drawable/ic_sair"
-        android:layout_gravity="right" />
+        android:src="@drawable/desconectar"
+        android:layout_gravity="right"
+        android:background="@color/colorPrimary"/>
 
     <ImageView
         android:id="@id/icoTitulo"
@@ -68,7 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="#24a193"
+        android:background="@color/colorButton"
         android:onClick="verInformacaoTecnica"
         android:padding="25dp"
         android:text="Informações Técnicas"

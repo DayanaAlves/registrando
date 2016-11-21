@@ -5,17 +5,9 @@
         <!-- Cores do Tema -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="colorTitle">@color/colorTitle</item>
-        <item name="colorText">@color/colorText</item>
-        <item name="colorEditText">@color/colorEditText</item>
-        <item name="colorBackground">@color/colorBackgroundDark</item>
-        <item name="colorBackground2">@color/colorBackgroundLight</item>
 
         <!-- Propriedades do Texto Padrão-->
         <item name="android:textSize">12sp</item>
-
-        <item name="android:"></item>
 
      </style>
 
