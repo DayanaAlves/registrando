@@ -6,7 +6,7 @@
     android:background="@color/colorPrimary"
     android:orientation="vertical"
     android:padding="@dimen/padding"
-    tools:context=".telas.Login">
+    tools:context=".telas.TelaLogin">
 
     <ImageView
         android:id="@id/icoPrincipal"
