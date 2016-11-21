@@ -6,7 +6,8 @@
     <dimen name="text2">14sp</dimen>
     <dimen name="text3">16sp</dimen>
     <dimen name="text4">18sp</dimen>
-    <dimen name="text5">24sp</dimen>
+    <dimen name="text5">20sp</dimen>
+    <dimen name="text6">24sp</dimen>
     <dimen name="edt_margin">10dp</dimen>
     <dimen name="edt_padding">10dp</dimen>
     <dimen name="padding">16dp</dimen>

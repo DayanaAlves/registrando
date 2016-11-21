@@ -6,7 +6,7 @@
     android:background="@color/colorPrimary"
     android:orientation="vertical"
     android:padding="@dimen/padding"
-    tools:context=".Login">
+    tools:context=".telas.Login">
 
     <ImageView
         android:id="@id/icoPrincipal"
@@ -61,8 +61,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
+        android:onClick="entrar"
         android:text="Entrar"
-        android:textAllCaps="true"
-        android:onClick="entrar"/>
+        android:textAllCaps="true" />
 
 </LinearLayout>

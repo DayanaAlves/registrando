@@ -4,25 +4,25 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context=".TelaPrincipal">
+    tools:context=".telas.TelaPrincipal">
 
     <ImageButton
-        android:padding="@dimen/padding"
         android:id="@+id/desconectar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="sair"
-        android:src="@drawable/desconectar"
         android:layout_gravity="right"
-        android:background="@color/colorPrimary"/>
+        android:background="@color/colorPrimary"
+        android:onClick="sair"
+        android:padding="@dimen/padding"
+        android:src="@drawable/desconectar" />
 
     <ImageView
         android:id="@id/icoTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:src="@drawable/titulo"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:src="@drawable/titulo" />
 
     <Button
         android:id="@+id/btn_registro"
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:background="@color/colorButton2"
-        android:onClick="verEstudoDeCaso"
+        android:onClick="abrirEstudosDeCaso"
         android:padding="25dp"
         android:text="Estudos de Caso"
         android:textAllCaps="false"
@@ -69,13 +69,13 @@
         android:id="@+id/btn_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
         android:background="@color/colorButton"
-        android:onClick="verInformacaoTecnica"
+        android:onClick="abrirInformacaoTecnica"
         android:padding="25dp"
         android:text="Informações Técnicas"
         android:textAllCaps="false"
         android:textColor="@color/colorText"
-        android:textSize="@dimen/text4"
-        android:layout_marginBottom="5dp"/>
+        android:textSize="@dimen/text4" />
 </LinearLayout>

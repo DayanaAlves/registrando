@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".telas.TelaEstudoDeCaso">
+
+    <ImageView
+        android:id="@+id/icoTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding"
+        android:src="@drawable/titulo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/icoTitulo"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="Estudos de Caso"
+        android:textAllCaps="true"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/text5"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/icoCaso1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/icoTitulo"
+        android:layout_alignStart="@id/icoTitulo"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="39dp"
+        android:background="@color/colorPrimary"
+        android:onClick="estudoDeCasoUm"
+        android:src="@drawable/ic_estudo_de_caso1" />
+
+    <ImageButton
+        android:id="@+id/icoCaso2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icoCaso1"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:onClick="estudoDeCasoDois"
+        android:src="@drawable/ic_estudo_de_caso2" />
+
+    <ImageButton
+        android:id="@+id/icoCaso3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icoCaso1"
+        android:layout_alignEnd="@id/icoTitulo"
+        android:layout_alignRight="@id/icoTitulo"
+        android:background="@color/colorPrimary"
+        android:onClick="estudoDeCasoTres"
+        android:src="@drawable/ic_estudo_de_caso3" />
+
+    <ImageButton
+        android:id="@+id/icoCaso4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icoCaso6"
+        android:layout_alignLeft="@+id/icoCaso1"
+        android:layout_alignStart="@+id/icoCaso1"
+        android:background="@color/colorPrimary"
+        android:onClick="estudoDeCasoTres"
+        android:src="@drawable/ic_estudo_de_caso4" />
+
+    <ImageButton
+        android:id="@+id/icoCaso5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icoCaso6"
+        android:layout_alignLeft="@+id/icoCaso3"
+        android:layout_alignStart="@+id/icoCaso3"
+        android:background="@color/colorPrimary"
+        android:onClick="estudoDeCasoCinco"
+        android:src="@drawable/ic_estudo_de_caso5" />
+
+    <ImageButton
+        android:id="@+id/icoCaso6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icoCaso2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorPrimary"
+        android:onClick="estudoDeCasoSeis"
+        android:src="@drawable/ic_estudo_de_caso6" />
+
+    <ImageButton
+        android:id="@+id/icoCaso7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/icoCaso4"
+        android:layout_alignRight="@+id/icoCaso4"
+        android:layout_below="@+id/icoCaso4"
+        android:layout_marginTop="57dp"
+        android:background="@color/colorPrimary"
+        android:onClick="estudoDeCasoSete"
+        android:src="@drawable/ic_estudo_de_caso7" />
+
+    <ImageButton
+        android:id="@+id/icoCaso8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/icoCaso5"
+        android:layout_alignRight="@+id/icoCaso5"
+        android:layout_alignTop="@+id/icoCaso7"
+        android:background="@color/colorPrimary"
+        android:onClick="estudoDeCasoOito"
+        android:src="@drawable/ic_estudo_de_caso8" />
+
+    <ImageButton
+        android:id="@+id/icoCaso9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/icoCaso6"
+        android:layout_alignStart="@+id/icoCaso6"
+        android:layout_alignTop="@+id/icoCaso8"
+        android:background="@color/colorPrimary"
+        android:onClick="estudoDeCasoNove"
+        android:src="@drawable/ic_estudo_de_caso9" />
+
+</RelativeLayout>
+

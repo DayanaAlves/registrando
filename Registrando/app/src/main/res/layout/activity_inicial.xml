@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:padding="@dimen/padding"
-    tools:context=".TelaInicial">
+    tools:context=".telas.TelaInicial">
 
     <ImageView
         android:id="@+id/icoPrincipal"
