@@ -1,35 +1,271 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context=".telas.TelaRegistroDeEnfermagem">
+    tools:context=".controle.TelaRegistroDeEnfermagem">
 
-    <ImageView
-        android:id="@+id/icoTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:padding="@dimen/padding"
-        android:src="@drawable/titulo" />
-
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/icoTitulo"
-        android:background="@color/colorPrimaryDark"
-        android:gravity="center"
-        android:padding="@dimen/padding"
-        android:text="Registro de Enfermagem"
-        android:textAllCaps="true"
-        android:textColor="@color/colorText"
-        android:textSize="@dimen/text5"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/icoTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding"
+            android:src="@drawable/titulo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/icoTitulo"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:text="Registro de Enfermagem"
+            android:textAllCaps="true"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text5"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TitHistPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/icoTitulo"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:text="Histórico do Paciente"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text3"
+            android:textStyle="bold"
+            android:background="#49077771" />
+
+        <EditText
+            android:id="@+id/edt_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/colorBackgroundLight"
+            android:hint="Digite as informações básicas do paciente"
+            android:inputType="textMultiLine"
+            android:maxLines="6"
+            android:padding="@dimen/edt_padding"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:textColor="@color/colorEditText"
+            android:textSize="@dimen/text4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:text="DADOS SUBJETIVOS"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text3"
+            android:textStyle="bold"
+            android:background="#49077771" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Como foi o descanso?"
+            android:textSize="@dimen/text3"
+            android:textStyle="bold"
+            android:background="#a05fd2cc"
+            android:layout_marginTop="6dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_descanso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:background="#a05fd2cc"
+            android:paddingLeft="135dp"
+            android:layout_marginBottom="6dp"
+            android:paddingBottom="6dp">
+
+            <RadioButton
+                android:id="@+id/rb_descanso_bom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOM" />
+
+            <RadioButton
+                android:id="@+id/rb_descanso_ruim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RUIM" />
+
+            <RadioButton
+                android:id="@+id/rb_descanso_insonia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INSÔNIA" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Tem algia?"
+            android:textSize="@dimen/text3"
+            android:textStyle="bold"
+            android:background="#6d3ec9c1" />
+
+        <RadioGroup
+            android:id="@+id/rg_algia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6d3ec9c1"
+            android:layout_marginBottom="6dp"
+            android:paddingBottom="6dp">
+
+            <RadioButton
+                android:id="@+id/rb_algia_sim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="SIM" />
+
+            <RadioButton
+                android:id="@+id/rb_algia_nao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="NÃO" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Estado neurológico:"
+            android:textSize="@dimen/text3"
+            android:textStyle="bold"
+            android:background="#a05fd2cc" />
+
+        <RadioGroup
+            android:id="@+id/rg_estado_neuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="135dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#a05fd2cc"
+            android:layout_marginBottom="6dp"
+            android:paddingBottom="6dp">
+
+            <RadioButton
+                android:id="@+id/rb_lucido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LÚCIDO" />
+
+            <RadioButton
+                android:id="@+id/rb_orientado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORIENTADO" />
+
+            <RadioButton
+                android:id="@+id/rb_desorientado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DESORIENTADO" />
+
+            <RadioButton
+                android:id="@+id/rb_alerta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALERTA" />
+
+            <RadioButton
+                android:id="@+id/rb_coma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMA" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Aspecto da pele:"
+            android:textSize="@dimen/text3"
+            android:textStyle="bold"
+            android:background="#6d3ec9c1" />
+
+        <RadioGroup
+            android:id="@+id/rg_pele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#6d3ec9c1"
+            android:layout_marginBottom="6dp"
+            android:paddingLeft="135dp"
+            android:paddingBottom="6dp">
+
+            <RadioButton
+                android:id="@+id/rb_hidratada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HIDRATADA" />
+
+            <RadioButton
+                android:id="@+id/rb_desidratada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DESIDRATADA" />
+
+            <RadioButton
+                android:id="@+id/rb_aspera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ÁSPERA" />
+
+            <RadioButton
+                android:id="@+id/rb_sudoreica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUDORÉICA" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:onClick="enviarEmail"
+            android:text="Salvar e Enviar "
+            android:textAlignment="center"
+            android:textColor="@color/colorBackgroundLight"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_margin="2dp">
+
+        </Button>
+    </LinearLayout>
+</ScrollView>
+
+
 
